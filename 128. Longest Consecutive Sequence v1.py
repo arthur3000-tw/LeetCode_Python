@@ -32,3 +32,4 @@ class Solution(object):
                 length = count
         
         return length
+        # Time: O(n^2)
