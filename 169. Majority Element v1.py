@@ -12,3 +12,5 @@ class Solution(object):
                 results[num] = 1
             if results[num] > len(nums)/2:
                 return num
+                # Time: O(n)
+                # Space: O(n)
