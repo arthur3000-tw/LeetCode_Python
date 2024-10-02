@@ -1,9 +1,5 @@
-class Solution(object):
-    def isValidSudoku(self, board):
-        """
-        :type board: List[List[str]]
-        :rtype: bool
-        """
+class Solution:
+    def isValidSudoku(self, board: List[List[str]]) -> bool:
         for row in board:
             s = set()
             for num in row:
