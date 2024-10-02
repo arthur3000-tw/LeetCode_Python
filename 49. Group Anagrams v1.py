@@ -1,9 +1,5 @@
-class Solution(object):
-    def groupAnagrams(self, strs):
-        """
-        :type strs: List[str]
-        :rtype: List[List[str]]
-        """
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         result_set = {}
         for word in strs: # n words
             word_set = [0] * 26
