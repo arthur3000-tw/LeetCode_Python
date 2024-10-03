@@ -12,3 +12,5 @@ class Solution:
             elif citations[mid] < papers - mid:
                 left = mid + 1
         return k
+        # Time: O(logn)
+        # Space: O(1)
