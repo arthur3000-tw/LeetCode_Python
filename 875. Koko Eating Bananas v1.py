@@ -13,3 +13,5 @@ class Solution:
                 right = mid
             else:
                 left = mid + 1
+        # Time: O(n * logn)
+        # Space: O(1)
