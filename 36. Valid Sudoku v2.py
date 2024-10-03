@@ -1,3 +1,5 @@
+# Greg Hogg
+# https://www.youtube.com/watch?v=HyiAKwasi3M
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         # Validate Rows
