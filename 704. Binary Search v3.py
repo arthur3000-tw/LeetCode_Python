@@ -1,27 +1,21 @@
 # Greg Hogg
-# https://www.youtube.com/watch?v=ceYZ5RgwQwQ
+# https://www.youtube.com/watch?v=Dt4FKOF25ZY
 class Solution:
-    def minEatingSpeed(self, piles: List[int], h: int) -> int:
-        def k_works(k):
-            hours = 0
+    def search(self, nums: List[int], target: int) -> int:
+        left = 0
+        right = len(nums) - 1
 
-            for p in piles:
-                hours += ceil(p / k)
+        while left <= right:
+            middle = (right + left) // 2
 
-            return hours <= h
-
-        l = 1
-        r = max(piles) # m
-
-        while l < r:
-            k = (l + r) // 2
-
-            if k_works(k):
-                r = k
+            if nums[middle] == target:
+                return middle
+            elif nums[middle] > target:
+                right = middle - 1
             else:
-                l = k + 1
+                left = middle + 1
 
-        return r
+        return -1
 
-# Time Complexity: O(n * log(m))
+# Time Complexity: O(log(n))
 # Space Complexity: O(1)
