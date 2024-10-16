@@ -23,3 +23,5 @@ class Solution:
                         check_queue.append(neighbor)
 
         return False
+        # Time O(V + E)
+        # Space O(V + E)
