@@ -24,5 +24,7 @@ class Solution:
                     l += 1
                 else:
                     r -= 1
-
+                    
         return ans
+    # Time: O(n^2)
+    # Space: O(n)
