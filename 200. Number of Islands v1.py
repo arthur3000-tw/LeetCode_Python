@@ -26,7 +26,7 @@ class Solution:
                     seen.add((i,j))
                 # 遍尋 queue
                 while check_queue:
-                    point = check_queue.pop()
+                    point = check_queue.popleft()
                     value = grid[point[0]][point[1]]
                     # 確認座標位置是否為 island
                     if value == "1":
